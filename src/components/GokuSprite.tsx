@@ -6,7 +6,7 @@ const GokuSprite = () => {
     <div className="w-full h-full flex items-center justify-center animate-bounce">
       <div className="relative w-16 h-16">
         <img 
-          src="/lovable-uploads/8ced7b0c-fb30-4c22-9f0d-c66fcf228b9f.png"
+          src="/lovable-uploads/86bb0ade-b147-49f3-9a9d-4998803ccba2.png"
           alt="Goku"
           className="w-full h-full object-contain drop-shadow-lg"
           style={{

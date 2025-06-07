@@ -1,8 +1,15 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import GameBoard from '../components/GameBoard';
+import WelcomeScreen from '../components/WelcomeScreen';
 
 const Index = () => {
+  const [showGame, setShowGame] = useState(false);
+
+  if (!showGame) {
+    return <WelcomeScreen onStartGame={() => setShowGame(true)} />;
+  }
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-400 via-red-500 to-purple-600 flex items-center justify-center p-4">
       <div className="w-full max-w-4xl">
