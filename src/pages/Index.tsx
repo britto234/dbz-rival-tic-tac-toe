@@ -2,9 +2,15 @@
 import React, { useState } from 'react';
 import GameBoard from '../components/GameBoard';
 import WelcomeScreen from '../components/WelcomeScreen';
+import SplashScreen from '../components/SplashScreen';
 
 const Index = () => {
+  const [showSplash, setShowSplash] = useState(true);
   const [showGame, setShowGame] = useState(false);
+
+  if (showSplash) {
+    return <SplashScreen onFinish={() => setShowSplash(false)} />;
+  }
 
   if (!showGame) {
     return <WelcomeScreen onStartGame={() => setShowGame(true)} />;
